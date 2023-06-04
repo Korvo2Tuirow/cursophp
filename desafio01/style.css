@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-image: linear-gradient(to right , rgb(4, 4, 177), rgb(108, 6, 192));
+}
+
+#desafio01, #resultado{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid rgb(0, 225, 255);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    color: #FFF;
+    border-radius: 10px;
+    box-shadow: #082150 5px 5px 10px;
+    filter: blur(100%);
+    background-color: #2362d856;
+    
+}
+hr{
+    width: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+label{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#inputNumber{
+    font-size: 20px;
+}
+
+input[type="submit"]{
+width: 100px;
+padding: 10px;
+font-weight: bold;
+font-size: 15px;
+border-radius: 10%;
+}
+
+p{
+    font-size: 20px;
+}
+
+#back a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    text-decoration: none;
+    margin-top: 20px;
+}
