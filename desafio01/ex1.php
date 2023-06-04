@@ -13,7 +13,7 @@
     <hr>
     <?php
     
-    $number = $_REQUEST["number"];
+    $number = (int)$_REQUEST["number"];
     $ant = $number-1;
     $suc = $number+1;
   
