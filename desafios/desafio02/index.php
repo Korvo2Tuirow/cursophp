@@ -13,7 +13,7 @@
     <hr>
     <p>Gerando um número aleatório de 0 a 100</p>
     <?php 
-        $num = rand(100, 0);
+        $num = mt_rand(100, 0);//randow_int() para numeros criptogradas
         echo "O valor gerado foi: $num";
     ?>
  <button onclick="javascript:document.location.reload()">&#x1F504 Gerar</button>
