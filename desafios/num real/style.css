@@ -1,0 +1,58 @@
+@charset "UTF8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HTML*/
+body{
+    width: 100%;
+    background-image: linear-gradient(to right, #231557, #0f638a);
+}
+
+main, .php{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    margin: 30px auto;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    color: #fff;
+    box-shadow: 5px 5px 15px #4f4f72;
+  
+}
+
+
+form, .php{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 30px auto;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+label, .php{
+    font-size: 20px;
+}
+
+input[type=number]{
+    font-size: 20px;
+}
+
+input[type=submit], button{
+    padding: 10px;
+    font-weight: bold;
+}
+
+.php h1, main h1{
+    font-size: 25px;
+}
+
