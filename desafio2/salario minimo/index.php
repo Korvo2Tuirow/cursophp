@@ -12,7 +12,7 @@
 
     <?php
     $salario = $_REQUEST['salario'] ?? 0;
-    $salarioMinimo = 1300;
+    $salarioMinimo = 1320;
     $real = numfmt_create("pt-BR", NumberFormatter::CURRENCY);
     ?>
 
