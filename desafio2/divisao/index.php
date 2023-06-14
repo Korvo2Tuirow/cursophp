@@ -10,14 +10,11 @@
 
 <body>
 
-
     <?php
-    $dividendo = $_REQUEST['dividendo'] ?? 0;
-    $divisor = $_REQUEST['divisor'] ?? 0;
-
-    $resultado = (int) ($dividendo / $divisor);
-    $resto = $dividendo % $divisor;
+    $dividendo = $_GET['dividendo'] ?? 0;
+    $divisor = $_GET['divisor'] ?? 1;
     ?>
+
 
     <main>
 
@@ -25,39 +22,42 @@
         <div id="anatomia">
             <form action="<?= $_SERVER['PHP_SELF'] ?>" method="get">
                 <label for="dividendo">Dividendo</label>
-                <input type="number" name="dividendo" id="dividendo" value="<?= $dividendo ?>">
+                <input type="number" min="0" name="dividendo" id="dividendo" value="<?= $dividendo ?>">
                 <label for="divisor">Divisor</label>
-                <input type="number" name="divisor" id="divisor" value="<?= $divisor ?>">
+                <input type="number" min="1" name="divisor" id="divisor" value="<?= $divisor ?>">
                 <input type="submit" value="Analisar">
             </form>
         </div>
 
-         </main>
+    </main>
 
-          <div id="estrutura">
+    <div id="estrutura">
 
-            <h2>Estrutura da Divisão</h2>
-            <div id="resp">
-                <div id="q1">
-                    <div id="numDividendo">
-                        <?= $dividendo ?>
-                    </div>
-
-                    <div id="numDivisor">
-                        <?= $divisor ?>
-                    </div>
+        <h2>Estrutura da Divisão</h2>
+        <div id="resp">
+            <div id="q1">
+                <div id="numDividendo">
+                    <?= $dividendo ?>
                 </div>
 
-                <div id="q2">
-                    <div id="resto">
-                        <?= $resto ?>
-                    </div>
-                    <div id="resultado">
-                        <?= $resultado ?>
-                    </div>
+                <div id="numDivisor">
+                    <?= $divisor ?>
+                </div>
+            </div>
+
+            <div id="q2">
+                <div id="resto">
+                    <?= $dividendo % $divisor ?>
+                </div>
+                <div id="result">
+                    <?= (int)($dividendo / $divisor) ?>
                 </div>
             </div>
         </div>
+    </div>
 </body>
+
+
+
 
 </html>
