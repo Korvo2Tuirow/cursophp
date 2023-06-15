@@ -99,13 +99,9 @@ input[type="submit"]:hover {
 
 h2 {
     font-size: 35px;
-    color: #2d074e;
+    color: #e6ff02;
 }
 
-#resp {
-    margin: 20px auto;
-    width: 100%;
-    padding: 0px 25px;
-
-
+#estrutura #resp ul li{
+    margin-top: 200px;
 }
